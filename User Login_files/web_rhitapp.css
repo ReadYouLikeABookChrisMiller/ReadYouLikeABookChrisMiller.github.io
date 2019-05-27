@@ -1,0 +1,510 @@
+/* RHIT custom style sheet*/
+/* Used to override some items in baseline web_defaultapp.css */
+/* and to create RHIT specific styles for use in custom packages */
+
+/* RHIT MOD to change color schemes, etc */
+/* ANCHORS (LINKS)                                          */
+/* ======================================================== */
+/*RHIT changed from 0000ff royal to 000066 navy */
+A:link{color:#000066;text-decoration:none;}
+
+/*RHIT change from purple 660099 to grey 707070 */
+A:visited{color:#707070;text-decoration:none;}
+
+/* RHIT change color of menu links from royal 0000ff to navy 000066*/
+A.submenulinktext2 {
+color:#000066; 
+}
+
+/* RHIT change visited links from purple 660099 to grey 707070 */
+A.submenulinktext2:visited {
+color: #707070;
+}
+
+BODY {
+
+/*RHIT mod to change image 
+background-image: url(/wtlgifs/web_bg_app.jpg); 
+background-image: url(/wtlgifs/BannerWeblogo.gif); */
+background-image: url(/wtlgifs/RH_Banner.png);
+margin-top: 50px;
+}
+
+DIV.pageheaderdiv1 {
+/*RHIT MOD reduce margin-top to 6% */
+margin-top: 6%;
+}
+
+DIV.pageheaderdiv2 {
+/* RHIT MOD reduce margin-top to 3px */
+margin-top: 3px;
+}
+
+DIV.headerlinksdiv2 {
+/*RHIT MOD add display: none to hide the search field */
+display: none;
+}
+
+/* Horizontal Rule for Menu Section                         */
+/* ======================================================== */
+
+HR {
+/*RHIT Changed from chartreuse CCCC33 to red CC0033*/
+color: #CC0033;
+text-align: left;
+vertical-align: top;
+margin-top: -10px;
+}
+
+HR.pageseprator {
+/*RHIT Change from 003366 Navy to charcoal*/
+color: #C0C0C0; 
+/*color: #333333;*/ 
+/*color: #003366;*/
+text-align: left;
+vertical-align: top;
+margin-top: 10px;
+}
+
+/* RHIT MOD to change text sizes */
+
+/*  RHIT MOD Change size of small text to 75%*/
+.fieldsmallboldtext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: bold;
+font-size: 75%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldsmalltext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: normal;
+font-size: 75%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldmediumboldtext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: bold;
+font-size: 80%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldmediumtext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: normal;
+font-size: 80%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldstrikethroughtext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: normal;
+font-size: 80%;
+font-style: normal;
+text-align: left;
+text-decoration: line-through;
+}
+
+/* RHIT MOD Change all background-color entries for table headers and labels from
+   baby blue/gray E3E5EE to light gray F0F0F0 */
+
+TABLE TD.deheader {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TH.deheader {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TD.detitle {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TH.detitle {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+/*RHIT MOD - added background-color:#F0F0F0*/
+TABLE TD.dehighlight {
+background-color: #F0F0F0;
+}
+
+/*RHIT MOD - added background-color:white*/
+TABLE TD.dewhite {
+background-color: white;
+}
+
+/* DATA DISPLAY TABLE HEADERS AND DATA CELLS                */
+/* Some font rules are redunant because they do not         */
+/* inherit well from the BODY on older browsers.            */
+/* ======================================================== */
+TABLE TD.ddheader {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TH.ddheader {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TD.ddtitle {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TH.ddtitle {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+
+/* Define tables with border				    */
+/* ======================================================== */
+TABLE TD.dbheader {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+border: 1px #B8B8B8 solid;
+}
+
+TABLE TH.dbheader {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+border: 1px #B8B8B8 solid;
+}
+
+TABLE TD.dbtitle {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TH.dbtitle {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TD.dblabel {
+border: 1px #B8B8B8 solid;
+font-weight: bold; 
+}
+
+TABLE TH.dblabel {
+/*background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+border: 1px #B8B8B8 solid;
+}
+
+TABLE TD.dbdefault {
+border: 1px #B8B8B8 solid;
+}
+
+/* NON TABULAR TABLE DATA DISPLAY  HEADERS AND DATA CELLS  */
+/* Some font rules are redunant because they do not         */
+/* inherit well from the BODY on older browsers.            */
+/* ======================================================== */
+TABLE TD.ntheader {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TH.ntheader {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TD.nttitle {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TH.nttitle {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TD.ntlabel {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+TABLE TH.ntlabel {
+/*RHIT MOD background-color: #E3E5EE;*/
+background-color: #F0F0F0;
+}
+
+
+/*New Tab styles for Self Service */
+
+.bgtabon {
+/*	RHIT Changed tab menu border from navy 003366 to black
+ BACKGROUND-COLOR: #003366 */
+  BACKGROUND-COLOR: #333333
+}
+.bgtaboff {
+	BACKGROUND-COLOR: #cccccc
+}
+
+/* RHIT MOD add tab contrast for FAR */
+
+.lightbgtaboff {
+	BACKGROUND-COLOR: #DDDDDD
+}
+.darkbgtaboff {
+	BACKGROUND-COLOR: #909090
+}
+/* RHIT MOD end */
+
+.tabon {
+/* RHIT change Current Tab color from navy to black 	
+   PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(/wtlgifs/web_tab_corner.gif); COLOR: #ffffff; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #003366 */
+	PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(/wtlgifs/web_tab_corner.gif); COLOR: #ffffff; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #333333	
+}
+
+/* RHIT MOD Add lighttaboff for FAR*/
+.lighttaboff {
+	PADDING-LEFT: 8px; 
+      FONT-WEIGHT: bold; 
+      FONT-SIZE: 12px; 
+      BACKGROUND-IMAGE: url(/wtlgifs/web_tab_corner.gif); 
+      COLOR: #000000; 
+      BACKGROUND-REPEAT: no-repeat; 
+      BACKGROUND-COLOR: #DDDDDD
+}
+.lighttaboff A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.lighttaboff A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.lighttaboff A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.lighttaboff A:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.darktaboff {
+	PADDING-LEFT: 8px; 
+      FONT-WEIGHT: bold; 
+      FONT-SIZE: 12px; 
+      BACKGROUND-IMAGE: url(/wtlgifs/web_tab_corner.gif); 
+      COLOR: #000000; 
+      BACKGROUND-REPEAT: no-repeat; 
+      BACKGROUND-COLOR: #909090 
+}
+.darktaboff A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.darktaboff A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.darktaboff A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.darktaboff A:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+
+/* RHIT MOD end */
+
+/* RHIT Mod Change header/body separator bar from chartreuese CCCC33 to dark red */
+.bg3 {
+	BACKGROUND-COLOR: #800000
+}
+
+/* RHIT ADDS - items moved form web_defaultapp.css */
+
+.fieldlabelnormaltext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: bold;
+font-size: 100%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldsmallitalictext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: normal;
+font-size: 75%;
+font-style: italic;
+text-align: left;
+padding-left:1em;
+}
+
+.fieldsmallitalicboldtext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: bold;
+font-size: 75%;
+font-style: italic;
+text-align: left;
+}
+
+.fieldmaroontextbold {
+color: maroon;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldredtextbold {
+color: #CC3333;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldlargeredtextbold {
+/*color: #CC0033;  */
+/*color: #940404;*/
+/*color: #B22222;*/
+color: #CC3333;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: bold;
+font-size: 110%;
+font-style: normal;
+text-align: left;
+}
+
+.fieldredtext {
+color: #CC3333;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fielddisabledtext {
+color: gray;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+text-align: left;
+}
+
+.fielditalictext {
+color: black;
+font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: italic;
+text-align: left;
+}
+
+/* RHIT added for Org Hierarchy report */
+A.plainlinktext {
+font-family:  Verdana,Arial Narrow, helvetica, sans-serif;
+font-weight: normal;
+font-size: 90%;
+font-style: normal;
+color:black;
+text-decoration: none;
+}
+
+/* RHIT added for Org Hierarchy report */
+A.boldlinktext {
+font-family:  Verdana,Arial Narrow, helvetica, sans-serif;
+font-weight: bold;
+font-size: 90%;
+font-style: normal;
+color:black;
+text-decoration: none;
+}
+/* End RHIT add */
+
+/* RHIT add to decrease margin around H2 Page Title */
+H2 {
+margin-top: 0px;
+margin-bottom: 3px;
+}
+
+/* RHIT add to remove extras space around paragraphs in table */
+TD>P {
+margin: 0;
+}
+
+TH>P {
+margin: 0;
+}
+
+/* RHIT add to add small amount of padding around table cells */
+/*
+TABLE.dataentrytable TD {
+padding: 3px;
+}
+
+TABLE.dataentrytable TH {
+padding: 3px;
+}
+
+TABLE.dataentrytable TD {
+padding: 3px;
+}
+
+TABLE.bordertable TH {
+padding: 3px;
+}
+
+TABLE.bordertable TD {
+padding: 3px;
+}
+
+TABLE.datadisplaytable TH {
+padding: 3px;
+}
+
+TABLE.datadisplaytable TD {
+padding: 3px;
+}
+
+*/
+
+
+TBODY.rhtable TD, TH {
+padding: 3px;
+}
+
+TBODY.rhtable2 TD, TH {
+padding: 3px;
+text-align: left;
+vertical-align: middle;
+}
+
+.disabledInput{
+ color: #888888;
+}
+
+.btnRed{
+ background-color: #B22222; 
+ color: #FFF; 
+ font-weight: bold; 
+ }
+
+.redCaptionText {
+ font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+ font-style: italic; 
+ font-weight: bold; 
+ font-size: 90%; 
+ color: #800000;
+ }

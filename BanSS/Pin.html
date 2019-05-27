@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<HTML lang="en">
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Pragma" NAME="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" NAME="Cache-Control" CONTENT="no-cache">
+<LINK REL="stylesheet" HREF="../css/web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../css/web_defaultprint.css" TYPE="text/css" media="print">
+<link rel="stylesheet" type="text/css" href="../css/web_rhitapp.css"/>
+<TITLE>Registration PIN Verification</TITLE>
+<META HTTP-EQUIV="Content-Script-Type" NAME="Default_Script_Language" CONTENT="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkCAPTCHA() { return true; }
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return checkCAPTCHA();
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-53851829-3']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) {
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="headerwrapperdiv">
+<DIV class="pageheaderdiv1">
+<A HREF="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</A>
+<H1>Rose-Hulman Banner Web</H1></DIV><DIV class="headerlinksdiv">
+<SPAN class="pageheaderlinks2">
+<MAP NAME="Module_Navigation_Links_H" title="Module Navigation Links">
+<p>
+<A HREF="#skip_Module_Navigation_Links_H" onMouseover="window.status='Skip Module Navigation Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Module Navigation Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Module Navigation Links</A>
+<TABLE  CLASS="plaintable" SUMMARY="This is main table for displaying Tab Items."
+                          WIDTH="100%" cellSpacing=0 cellPadding=0 border=0>
+<TR>
+<TD CLASS="pldefault">
+<TABLE  CLASS="plaintable" SUMMARY="This table displays Tab Items."
+                 cellSpacing=0 cellPadding=0 border=0>
+<TR>
+<td class="taboff" height=22>
+<A HREF="MainMenu.html" onMouseover="window.status='Main Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Main Menu'; return true" onBlur="window.status=''; return true" >Main</A>
+</td>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+<td class="taboff" height=22>
+<A HREF="/BanSS/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu" onMouseover="window.status='New Personal Information'; return true" onMouseout="window.status=''; return true" onFocus="window.status='New Personal Information'; return true" onBlur="window.status=''; return true" >Personal Information</A>
+</td>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+<td class="tabon"  height=22>
+<A HREF="Student.html" onMouseover="window.status='Student & Financial Aid Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Student & Financial Aid Menu'; return true" onBlur="window.status=''; return true" >Student</A>
+</td>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+<td class="taboff" height=22>
+<A HREF="/BanSS/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu" onMouseover="window.status='Financial Aid'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Financial Aid'; return true" onBlur="window.status=''; return true" >Financial Aid</A>
+</td>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+<td class="taboff" height=22>
+<A HREF="/BanSS/twbkwbis.P_GenMenu?name=pmenu.P_MainMnu" onMouseover="window.status='Employee Services Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Employee Services Menu'; return true" onBlur="window.status=''; return true" >Employee</A>
+</td>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+<td class="taboff" height=22>
+<A HREF="/BanSS/GZPSOS.P_ShowSurveys" onMouseover="window.status='Agreements/Authorizations/Surveys'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Agreements/Authorizations/Surveys'; return true" onBlur="window.status=''; return true" >Surveys</A>
+</td>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+<td class="taboff" height=22>
+<A HREF="/BanSS/twbkwbis.P_GenMenu?name=bmenu.P_ProxyMenu" onMouseover="window.status='web4proxy'; return true" onMouseout="window.status=''; return true" onFocus="window.status='web4proxy'; return true" onBlur="window.status=''; return true" >web4proxy</A>
+</td>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+<td class="taboff" height=22>
+<A HREF="/BanSS/twbkwbis.P_GenMenu?name=bmenu.P_GenAppMnu" onMouseover="window.status='RHIT Custom Applications'; return true" onMouseout="window.status=''; return true" onFocus="window.status='RHIT Custom Applications'; return true" onBlur="window.status=''; return true" >RHIT Apps</A>
+</td>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+<td class="taboff" height=22>
+<A HREF="/BanSS/twbkwbis.P_GenMenu?name=bmenu.P_CNMnu" onMouseover="window.status='CASHNet'; return true" onMouseout="window.status=''; return true" onFocus="window.status='CASHNet'; return true" onBlur="window.status=''; return true" >CASHNet</A>
+</td>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</td>
+</TR>
+</TABLE>
+</td>
+</TR>
+<TR>
+<TD class="bgtabon" width="100%" colSpan=2><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></td></TR></TABLE>
+</MAP>
+</SPAN>
+<a name="skip_Module_Navigation_Links_H"></a>
+</DIV>
+<TABLE  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox."
+         WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<DIV class="headerlinksdiv2">
+<FORM ACTION="/BanSS/twbksrch.P_ShowResults" METHOD="POST">
+Search
+<SPAN class="fieldlabeltextinvisible"><LABEL for=keyword_in_id><SPAN class="fieldlabeltext">Search</SPAN></LABEL></SPAN>
+<INPUT TYPE="text" NAME="KEYWRD_IN" SIZE="20" MAXLENGTH="65" ID="keyword_in_id">
+<INPUT TYPE="submit" VALUE="Go">
+</FORM>
+</div>
+</td>
+<TD CLASS="pldefault"><p class="rightaligntext">
+<SPAN class="pageheaderlinks">
+<A HREF="MainMenu.html"  class="submenulinktext2" id="ssbbackurl">RETURN TO MENU</A>
+|
+<A HREF="/BanSS/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</A>
+|
+<A HREF="/wtlhelp/twbhhelp.htm" accesskey="H" onClick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</A>
+|
+<A HREF="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</A>
+</span>
+</td>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="pagetitlediv">
+<TABLE  CLASS="plaintable" SUMMARY="This table displays title and static header displays."
+   WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<H2>Registration PIN Verification</H2>
+</td>
+<TD CLASS="pldefault">
+&nbsp;
+</td>
+<TD CLASS="pldefault"><p class="rightaligntext">
+<DIV class="staticheaders">
+801605689 Neil Roy<br>
+Winter Quarter - 2019-20<br>
+<div id="demo"></div>
+<script>
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+var hh = today.getHours();
+var m = today.getMinutes();
+if(dd<10) {
+  dd='0'+dd
+}
+
+switch (mm) {
+  case 1:
+    mm = 'January'
+    break;
+  case 2:
+    mm = 'February'
+    break;
+  case 3:
+    mm = 'March'
+    break;
+  case 4:
+    mm = 'April'
+    break;
+  case 5:
+    mm = 'May'
+    break;
+  case 6:
+    mm = 'June'
+    break;
+  case 7:
+    mm = 'July'
+    break;
+  case 8:
+    mm = 'August'
+    break;
+  case 9:
+    mm = 'September'
+    break;
+  case 10:
+    mm = 'October'
+    break;
+  case 11:
+    mm = 'November'
+    break;
+  case 12:
+    mm = 'December'
+    break;
+  default:
+
+}
+today = mm+' '+dd+', '+yyyy;
+var myVar=setInterval(function(){myTimer()},1000);
+
+function myTimer() {
+    var d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var ampm = h >= 12 ? 'pm' : 'am';
+    h = h % 12;
+    h = h ? h : 12;
+    h = h < 10 ? '0'+h : h;
+    m = m < 10 ? '0'+m : m;
+    document.getElementById("demo").innerHTML = today+' '+h+':'+m+' '+ampm;
+}
+</script>
+</div>
+</td>
+</TR>
+<TR>
+<TD class="bg3" width="100%" colSpan=3><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></td>
+</TR>
+</TABLE>
+<a name="main_content"></a>
+</DIV>
+<DIV class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><TR><TD CLASS="indefault"><IMG SRC="../wtlgifs/twgginfo.gif" ALT="Information" CLASS="headerImg" TITLE="Information"  NAME="Info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=24 WIDTH=27></TD><TD CLASS="indefault"><SPAN class="infotext"> <B>Enter your 6-digit registration PIN for verification, then click Submit.  Your registration PIN must be obtained from your academic advisor.<p><B/></SPAN></TD></TR></TABLE><P></DIV>
+<!-- <FORM ACTION="/BanSS/bwskfreg.P_CheckAltPin" METHOD="POST" onSubmit="return checkSubmit()"> -->
+<TABLE  CLASS="dataentrytable" SUMMARY="This table allows the user to enter their alternate PIN for registration processing.">
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=apin_id><SPAN class="fieldlabeltext">Alternate PIN:</SPAN></LABEL></TD>
+<TD CLASS="dedefault"><INPUT TYPE="password" NAME="pin" SIZE="8" MAXLENGTH="8" ID="apin_id"></TD>
+</TR>
+</TABLE>
+<BR>
+<INPUT TYPE="submit" VALUE="Submit" onclick="myFunction()">
+  <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" LANGUAGE="JScript">
+  function myFunction() {
+    var pin = document.getElementById("apin_id");
+    if(pin.value == '411015') {
+      window.open('MainMenu.html', '_self');
+    }
+    else {
+      alert("INCORRECT PIN: Before we get started on this trip, you need to fill out a waiver.");
+    }
+    document.loginform.reset();
+  }
+  //  End script hiding -->
+  </SCRIPT>
+</FORM>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<TABLE  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><TR><TD class="bgtabon" width="100%" colSpan=2><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></td></TR></TABLE>
+<A HREF="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</A>
+</DIV>
+<DIV class="footerbeforediv">
+
+</DIV>
+<DIV class="footerafterdiv">
+
+</DIV>
+<DIV class="globalafterdiv">
+
+</DIV>
+<DIV class="globalfooterdiv">
+
+</DIV>
+<DIV class="pagefooterdiv">
+<SPAN class="releasetext">Release: 8.7.1</SPAN>
+</DIV>
+<DIV class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+<div class="banner_copyright"> <br><h5>© 2019 Ellucian Company L.P. and its affiliates.<br></h5></div>
+</BODY>
+</HTML>
