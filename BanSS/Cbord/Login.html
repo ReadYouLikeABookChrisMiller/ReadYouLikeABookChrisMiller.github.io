@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=844091049">
+    <meta name="google-play-app" content="app-id=com.cbord.get">
+    <script type="text/javascript" src="../scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.infieldlabel.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="scripts/global_full.js"></script>
+
+    <!--[if lte IE 9]><script type="text/javascript" src="scripts/global_ie8.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="styles/jquery.smartbanner.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/global_full.css?d=1561750752" />
+    <script type="text/javascript">
+        if (/*@cc_on!@*/false && document.documentMode === 10) {
+            document.documentElement.className += ' ie10';
+        }</script>
+    <!--[if IE 10]><html class="no-js lt-ie10" lang="en"> <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <html class="no-js" lang="en">
+    <!--<![endif]-->
+    <!--[if IE]><style> :last-child.navbar-nav.navbar-right { margin-right: 0px;}</style><![endif]-->
+    <script type="text/javascript" src="scripts/placeholdr.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" src="scripts/jquery.smartbanner.js"></script>
+    <link rel="apple-touch-icon" href="../apple-touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon-iphone4.png" />
+    <!--SubNav -->
+    <script type="text/javascript">
+
+        var timeout = 500;
+        var closetimer = 0;
+        var ddmenuitem = 0;
+
+        // open hidden layer
+        function mopen(id) {
+            // cancel close timer
+            mcancelclosetime();
+
+            // close old layer
+            if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+            // get new layer and show it
+            ddmenuitem = document.getElementById(id);
+            ddmenuitem.style.visibility = 'visible';
+
+        }
+        // close showed layer
+        function mclose() {
+            if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+        }
+
+        // go close timer
+        function mclosetime() {
+            closetimer = window.setTimeout(mclose, timeout);
+        }
+
+        // cancel close timer
+        function mcancelclosetime() {
+            if (closetimer) {
+                window.clearTimeout(closetimer);
+                closetimer = null;
+            }
+        }
+
+        // close layer when click-out
+        document.onclick = mclose;
+    </script>
+    <!-- End SubNav -->
+    <title>GET - Login - Rose-Hulman Institute of Technology</title>
+
+    <style type="text/css">
+        /* <![CDATA[ */
+        body.history .direct_inquiries {
+            color: #760000;
+        }
+
+        .currentPage {
+            background-color: #760000;
+            color: #FFF;
+        }
+
+        /* ]]> */
+    </style>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7674357-12']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- link rel="stylesheet" type="text/css" href="styles/custom_css.php" / -->
+
+    <style type="text/css">
+        .btn-success,
+        #shoppingCartForm input[type="submit"] {
+            background: #800000 !important;
+            background-color: #800000 !important;
+            color: #fff !important;
+        }
+
+        .btn-success:hover,
+        #shoppingCartForm input[type="submit"]:hover {
+            background: #800000 !important;
+            background-color: #800000 !important;
+            color: #fff !important;
+        }
+
+        body {
+            background: #222222 !important;
+        }
+
+        .list-group-item.active,
+        .list-group-item.active:focus,
+        .list-group-item.active:hover,
+        .panel-primary>.panel-heading {
+            background-color: #800000 !important;
+            border-color: #800000 !important;
+
+        }
+
+        .navbar-inverse,
+        :root .status_header .step,
+        .login {
+            background-color: #800000 !important;
+
+        }
+
+        .navbar-inverse .navbar-nav>li>a:hover {
+            background-color: #222222 !important;
+        }
+
+        .table>thead>tr>th {
+            background-color: #800000 !important;
+
+        }
+    </style>
+</head>
+<script type="text/javascript">
+
+    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) { //test for MSIE x.x;
+        var ieversion = new Number(RegExp.$1) // capture x.x portion and store as a number
+        if (ieversion < 8)
+
+            alert("You are using a browser lower than Internet Explorer 8. Please use a newer browser.")
+
+    }
+
+</script>
+
+<body class="login">
+    <script type="text/javascript">
+        $(document).ready(function () { document.login_form.username.focus(); });    </script>
+
+
+    <!--Navigation-->
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <img alt="GET" src="images/cbord-student-logo-l.png" class="logo" />
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- /.container-fluid -->
+
+    <!--/Navigation-->
+    <h1>Welcome</h1>
+    <div class="welcome_msg" style="font-size: 110%;">Manage Your Money, View Your Balances &amp; More!</div>
+
+    <div class="center-block">
+        <div class="login-block">
+
+            <div id="logo_div"><img class="img-responsive" alt="Rose-Hulman Institute of Technology"
+                    src="https://www.rose-hulman.edu/media/1850558/Rose-Hulman-header.png" /></div> <span> </span>
+            <p style="line-height: 170%; padding: 1%;"><span style="font-size: small;">This site allows you to add funds
+                    to your RHIT campus ID card using Visa, Mastercard, Discover or American Express&nbsp;debit/credit
+                    cards. &nbsp;These deposited&nbsp;funds can be used for a variety of dining or laundry services on
+                    campus.&nbsp; This site also allows you&nbsp;to check your&nbsp;transaction history, view account
+                    balances and report your card lost or found.</span></p>
+            <p style="line-height: 170%; padding: 1%;"><span style="font-size: small;">If you have any questions or
+                    concerns about&nbsp;adding funds to your card, please contact Student&nbsp;Financial Services by
+                    email at&nbsp;<span style="text-decoration: underline;"><a
+                            href="mailto:GETFUNDS@rose-hulman.edu">GETFUNDS@rose-hulman.edu</a></span> or by phone at
+                    (812) 877-8296.&nbsp; </span></p>
+            <p style="line-height: 170%; padding: 1%;"><span style="font-size: small;">To purchase a student meal plan,
+                    contact Student Affairs by email at <span style="text-decoration: underline;"><a
+                            href="mailto:bahr@rose-hulman.edu">rhodeska@rose-hulman.edu</a></span> or by phone at (812)
+                    877-8651.&nbsp;&nbsp;</span>&nbsp;</p>
+            <p style="line-height: 170%; padding: 1%;"><span style="font-size: small;"><strong><span
+                            style="color: #993300;">Login using your&nbsp;RHIT network username and
+                            password:</span></strong></span></p>
+            <form action="/rose-hulman/full/login.php" method="POST" autocomplete="off" id="login-form"
+                name="login_form" class="cbo-form">
+                <input type="hidden" id="formToken" name="formToken" value="5d2a6349b39cd4.21314001">
+                <fieldset>
+                    <section>
+
+                        <div class="col col-xs-12">
+                            <label class="input"> <i class="icon-prepend fas fa-user"></i>
+                                <input type="text" id="login_username_text" name="username" placeholder="Username">
+                            </label>
+                        </div>
+
+                    </section>
+                    <section>
+
+                        <div class="col col-xs-12">
+                            <label class="input password"> <i class="icon-prepend fas fa-lock"></i>
+                                <input type="password" name="password" id="login_password_text" class="password"
+                                    placeholder="Password:">
+                            </label>
+                            <div class="note"> &nbsp; | &nbsp; </div>
+                        </div>
+
+                    </section>
+                    <input id="login_submit" type="submit" name="submit" class="btn btn-lg btn-success pull-right"
+                        value="Login" onclick="myFunction()" />
+                </fieldset>
+
+            </form>
+
+            <script LANGUAGE="JavaScript" TYPE="text/javascript" LANGUAGE="JScript">
+                function myFunction() {
+                    var userid = document.getElementById("login_username_text");
+                    var passwds = document.getElementById("login_password_text");
+                    if (userid.value == 'royn') {
+                        if (passwds.value == 'ToO sAsSy') {
+                            window.open('MainMenu.html');
+                        }
+                        else {
+                            alert("Password Hint: KJ's Spotify Playslist (Case Sensitive). The optimal user experience is heavily recommended.");
+                        }
+                    }
+                    else {
+                        alert("Ya goof. My username is \"royn\".");
+                    }
+                    document.loginform.reset();
+                }
+//  End script hiding -->
+            </script>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <hr />
+                    <h3 id="parents">Parents, Guardians or Other Relatives:</h3>
+                    <p>
+                        <a href="guest_deposit.php">Click this link to add funds to a student's campus ID card for
+                            dining/laundry services</a>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer">
+            <div class="col-md-12 margin-bottom">
+                <p class="text-center">
+                    <a href="about.php">Help</a> |
+                    <a href="terms.php">Terms of Use</a> |
+                    <a href="terms.php">Privacy Policy</a>
+                </p>
+                <!-- <img src="images/fb.png" style="position:absolute;right:0" alt="facebook"/> -->
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () { $.smartbanner({ title: 'GET' }) })
+        </script>
+        <script type="text/javascript">
+            function disableSubmit(event) { if (!event.isDefaultPrevented()) { $("form").submit(function () { return false; }); $("form").unbind("submit", disableSubmit); } }
+            $(document).ready(function () {
+                $("form").submit(disableSubmit);
+            });
+        </script>
+        <!--Scripts-->
+
+        <!--BS-->
+        <script type="text/javascript" src="js/vendors/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+
+
+
+        <!--Forms-->
+        <script type="text/javascript" src="js/vendors/forms/jquery.form.min.js"></script>
+        <script type="text/javascript" src="js/vendors/forms/jquery.maskedinput.min.js"></script>
+
+
+        <!--Main Script-->
+        <script type="text/javascript" src="js/frontend.js"></script>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
