@@ -8,10 +8,10 @@
 <LINK REL="stylesheet" HREF="../css/web_defaultapp.css" TYPE="text/css">
 <LINK REL="stylesheet" HREF="../css/web_defaultprint.css" TYPE="text/css" media="print">
 <link rel="stylesheet" type="text/css" href="../css/web_rhitapp.css"/>
-<TITLE>Registration PIN Verification</TITLE>
+<TITLE>Time Sheet Selection</TITLE>
 <META HTTP-EQUIV="Content-Script-Type" NAME="Default_Script_Language" CONTENT="text/javascript">
 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
-<!-- Hide JavaScript from older browsers
+<!-- Hide JavaScript from older browsers 
 window.onunload = function() {submitcount=0;}
 var submitcount=0;
 function checkCAPTCHA() { return true; }
@@ -38,11 +38,11 @@ _gaq.push(['_trackPageview']);
 //  End script hiding -->
 </SCRIPT>
 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
-<!-- Hide JavaScript from older browsers
+<!-- Hide JavaScript from older browsers 
 //  Function to open a window
 function windowOpen(window_url) {
    helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
-   if (document.images) {
+   if (document.images) { 
        if (helpWin) helpWin.focus()
    }
 }
@@ -67,58 +67,58 @@ function windowOpen(window_url) {
 <TR>
 <td class="taboff" height=22>
 <A HREF="MainMenu.html" onMouseover="window.status='Main Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Main Menu'; return true" onBlur="window.status=''; return true" >Main</A>
-</td>
+</TD>
 <TD class="bgtaboff" height=22 vAlign="top" align="right">
 <IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
-</td>
-<td class="tabon"  height=22>
+</TD>
+<td class="taboff" height=22>
 <A HREF="Student.html" onMouseover="window.status='Student & Financial Aid Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Student & Financial Aid Menu'; return true" onBlur="window.status=''; return true" >Student</A>
-</td>
-<TD class="bgtabon"  height=22 vAlign="top" align="right">
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
 <IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
-</td>
+</TD>
 <td class="taboff" height=22>
 <A HREF="/BanSS/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu" onMouseover="window.status='Financial Aid'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Financial Aid'; return true" onBlur="window.status=''; return true" >Financial Aid</A>
-</td>
+</TD>
 <TD class="bgtaboff" height=22 vAlign="top" align="right">
 <IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
-</td>
-<td class="taboff" height=22>
+</TD>
+<td class="tabon"  height=22>
 <A HREF="Employee.html" onMouseover="window.status='Employee Services Menu'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Employee Services Menu'; return true" onBlur="window.status=''; return true" >Employee</A>
-</td>
-<TD class="bgtaboff" height=22 vAlign="top" align="right">
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
 <IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
-</td>
+</TD>
 <td class="taboff" height=22>
 <A HREF="/BanSS/GZPSOS.P_ShowSurveys" onMouseover="window.status='Agreements/Authorizations/Surveys'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Agreements/Authorizations/Surveys'; return true" onBlur="window.status=''; return true" >Surveys</A>
-</td>
+</TD>
 <TD class="bgtaboff" height=22 vAlign="top" align="right">
 <IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
-</td>
+</TD>
 <td class="taboff" height=22>
 <A HREF="/BanSS/twbkwbis.P_GenMenu?name=bmenu.P_ProxyMenu" onMouseover="window.status='web4proxy'; return true" onMouseout="window.status=''; return true" onFocus="window.status='web4proxy'; return true" onBlur="window.status=''; return true" >web4proxy</A>
-</td>
+</TD>
 <TD class="bgtaboff" height=22 vAlign="top" align="right">
 <IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
-</td>
+</TD>
 <td class="taboff" height=22>
 <A HREF="/BanSS/twbkwbis.P_GenMenu?name=bmenu.P_GenAppMnu" onMouseover="window.status='RHIT Custom Applications'; return true" onMouseout="window.status=''; return true" onFocus="window.status='RHIT Custom Applications'; return true" onBlur="window.status=''; return true" >RHIT Apps</A>
-</td>
+</TD>
 <TD class="bgtaboff" height=22 vAlign="top" align="right">
 <IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
-</td>
+</TD>
 <td class="taboff" height=22>
 <A HREF="Cashnet.html" onMouseover="window.status='CASHNet'; return true" onMouseout="window.status=''; return true" onFocus="window.status='CASHNet'; return true" onBlur="window.status=''; return true" >CASHNet</A>
-</td>
+</TD>
 <TD class="bgtaboff" height=22 vAlign="top" align="right">
 <IMG SRC="../wtlgifs/web_tab_corner_right.gif" ALT="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
-</td>
+</TD>
 </TR>
 </TABLE>
-</td>
+</TD>
 </TR>
 <TR>
-<TD class="bgtabon" width="100%" colSpan=2><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></td></TR></TABLE>
+<TD class="bgtabon" width="100%" colSpan=2><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
 </MAP>
 </SPAN>
 <a name="skip_Module_Navigation_Links_H"></a>
@@ -135,18 +135,16 @@ Search
 <INPUT TYPE="submit" VALUE="Go">
 </FORM>
 </div>
-</td>
+</TD>
 <TD CLASS="pldefault"><p class="rightaligntext">
 <SPAN class="pageheaderlinks">
-<A HREF="Registration.html"  class="submenulinktext2" id="ssbbackurl">RETURN TO MENU</A>
-|
 <A HREF="/BanSS/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</A>
 |
-<A HREF="/wtlhelp/twbhhelp.htm" accesskey="H" onClick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</A>
+<A HREF="../wtlhelp/twbhhelp.htm" accesskey="H" onClick="popup = window.open('../wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</A>
 |
 <A HREF="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</A>
 </span>
-</td>
+</TD>
 </TR>
 </TABLE>
 </DIV>
@@ -155,121 +153,71 @@ Search
    WIDTH="100%">
 <TR>
 <TD CLASS="pldefault">
-<H2>Registration PIN Verification</H2>
-</td>
+<H2>Time Sheet Selection</H2>
+</TD>
 <TD CLASS="pldefault">
 &nbsp;
-</td>
+</TD>
 <TD CLASS="pldefault"><p class="rightaligntext">
 <DIV class="staticheaders">
-801605689 Neil Roy<br>
-Fall Quarter - 2019-20<br>
-<div id="demo"></div>
-<script>
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
-var hh = today.getHours();
-var m = today.getMinutes();
-if(dd<10) {
-  dd='0'+dd
-}
-
-switch (mm) {
-  case 1:
-    mm = 'January'
-    break;
-  case 2:
-    mm = 'February'
-    break;
-  case 3:
-    mm = 'March'
-    break;
-  case 4:
-    mm = 'April'
-    break;
-  case 5:
-    mm = 'May'
-    break;
-  case 6:
-    mm = 'June'
-    break;
-  case 7:
-    mm = 'July'
-    break;
-  case 8:
-    mm = 'August'
-    break;
-  case 9:
-    mm = 'September'
-    break;
-  case 10:
-    mm = 'October'
-    break;
-  case 11:
-    mm = 'November'
-    break;
-  case 12:
-    mm = 'December'
-    break;
-  default:
-
-}
-today = mm+' '+dd+', '+yyyy;
-var myVar=setInterval(function(){myTimer()},1000);
-
-function myTimer() {
-    var d = new Date();
-    var h = d.getHours();
-    var m = d.getMinutes();
-    var ampm = h >= 12 ? 'pm' : 'am';
-    h = h % 12;
-    h = h ? h : 12;
-    h = h < 10 ? '0'+h : h;
-    m = m < 10 ? '0'+m : m;
-    document.getElementById("demo").innerHTML = today+' '+h+':'+m+' '+ampm;
-}
-</script>
 </div>
-</td>
+</TD>
 </TR>
 <TR>
-<TD class="bg3" width="100%" colSpan=3><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></td>
+<TD class="bg3" width="100%" colSpan=3><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD>
 </TR>
 </TABLE>
 <a name="main_content"></a>
 </DIV>
 <DIV class="pagebodydiv">
 <!--  ** END OF twbkwbis.P_OpenDoc **  -->
-<DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><TR><TD CLASS="indefault"><IMG SRC="../wtlgifs/twgginfo.gif" ALT="Information" CLASS="headerImg" TITLE="Information"  NAME="Info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=24 WIDTH=27></TD><TD CLASS="indefault"><SPAN class="infotext"> <B>Enter your 6-digit registration PIN for verification, then click Submit.  Your registration PIN must be obtained from your academic advisor.<p><B/></SPAN></TD></TR></TABLE><P></DIV>
-<!-- <FORM ACTION="/BanSS/bwskfreg.P_CheckAltPin" METHOD="POST" onSubmit="return checkSubmit()"> -->
-<TABLE  CLASS="dataentrytable" SUMMARY="This table allows the user to enter their alternate PIN for registration processing.">
+
+
+<DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><TR><TD CLASS="indefault"><IMG SRC="../wtlgifs/web_info_cascade.png" ALT="Information" CLASS="headerImg" TITLE="Information"  NAME="web_info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=12 WIDTH=14></TD><TD CLASS="indefault"><SPAN class="infotext"> Make a selection from My Choice.  Choose a Time Sheet period from the pull-down list.  Select Time Sheet.</SPAN></TD></TR></TABLE><P></DIV>
+<TABLE  CLASS="dataentrytable" SUMMARY="This table lists the position, department, pay period, and status. From this table, the user determines which records to access.">
 <TR>
-<TD CLASS="delabel" scope="row" ><LABEL for=apin_id><SPAN class="fieldlabeltext">Alternate PIN:</SPAN></LABEL></TD>
-<TD CLASS="dedefault"><INPUT TYPE="password" NAME="pin" SIZE="8" MAXLENGTH="8" ID="apin_id"></TD>
+<TD CLASS="deheader" scope="col" ABBR="Department">Title and Department</TD>
+<TD COLSPAN="2" CLASS="deheader" scope="col" >My Choice</TD>
+<TD COLSPAN="2" CLASS="deheader" scope="col" ABBR="Period">Pay Period and Status</TD>
+<TD CLASS="dedefault">
+<FORM ACTION="bwpkteis.P_SelectTimeSheet" METHOD="post">
+<INPUT TYPE="submit" NAME="ButtonSelected" VALUE="Show History">
+</FORM>
+</TD>
+</TR>
+<FORM ACTION="TimeSheet.html" METHOD="post">
+<TR>
+<TD CLASS="dedefault">Math-Reg Payroll, R03172-00<BR>Mathematics Non-Salary, 3172</TD>
+<TD CLASS="dedefault"><INPUT TYPE="radio" NAME="Jobs" VALUE="1,R03172,00,T,3172,2" CHECKED ID=cjobs_1_id></TD>
+<TD CLASS="dedefault"><LABEL for=cjobs_1_id><SPAN class="fieldlabeltextinvisible">My Choice</SPAN></LABEL></TD>
+<TD CLASS="dedefault"><LABEL for=period_1_id><SPAN class="fieldlabeltextinvisible">Pay Period</SPAN></LABEL></TD>
+<TD CLASS="dedefault">
+<SELECT NAME="PayPeriod" SIZE="1" ID=period_1_id>
+<OPTION VALUE="2019,ST,11,I">Apr 28, 2019 to May 11, 2019   In Progress</OPTION>
+<OPTION VALUE="2019,ST,8,C">Mar 17, 2019 to Mar 30, 2019   Completed</OPTION>
+<OPTION VALUE="2019,ST,7,C">Mar 03, 2019 to Mar 16, 2019   Completed</OPTION>
+<OPTION VALUE="2019,ST,5,C">Feb 03, 2019 to Feb 16, 2019   Completed</OPTION>
+<OPTION VALUE="2019,ST,4,C">Jan 20, 2019 to Feb 02, 2019   Completed</OPTION>
+<OPTION VALUE="2019,ST,2,C">Dec 16, 2018 to Jan 05, 2019   Completed</OPTION>
+<OPTION VALUE="2018,ST,26,C">Nov 25, 2018 to Dec 08, 2018   Completed</OPTION>
+<OPTION VALUE="2018,ST,22,C">Sep 30, 2018 to Oct 13, 2018   Completed</OPTION>
+</SELECT>
+</TD>
 </TR>
 </TABLE>
-<BR>
-<INPUT TYPE="submit" VALUE="Submit" onclick="myFunction()">
-  <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" LANGUAGE="JScript">
-  function myFunction() {
-    var pin = document.getElementById("apin_id");
-    if(pin.value == '411015') {
-      window.open('../Prize/Prize.html', '_self');
-    }
-    else {
-      alert("INCORRECT PIN: Before we get started on this trip, you need to fill out a waiver.");
-    }
-    document.loginform.reset();
-  }
-  //  End script hiding -->
-  </SCRIPT>
+<P>
+<TABLE  CLASS="plaintable" SUMMARY="This layout table is used for displaying buttons.">
+<TR>
+<TD CLASS="pldefault">
+<INPUT TYPE="submit" VALUE="Time Sheet">
+</TD>
+</TR>
+</TABLE>
 </FORM>
 
 <!--  ** START OF twbkwbis.P_CloseDoc **  -->
 <TABLE  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
-                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><TR><TD class="bgtabon" width="100%" colSpan=2><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></td></TR></TABLE>
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><TR><TD class="bgtabon" width="100%" colSpan=2><IMG SRC="../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
 <A HREF="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</A>
 </DIV>
 <DIV class="footerbeforediv">
@@ -285,7 +233,7 @@ function myTimer() {
 
 </DIV>
 <DIV class="pagefooterdiv">
-<SPAN class="releasetext">Release: 8.7.1</SPAN>
+<SPAN class="releasetext">Release: 8.12.1.5</SPAN>
 </DIV>
 <DIV class="poweredbydiv">
 </DIV>
